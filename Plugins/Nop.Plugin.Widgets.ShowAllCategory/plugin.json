@@ -1,0 +1,11 @@
+{
+  "Group": "Widgets",
+  "FriendlyName": "Show All Category",
+  "SystemName": "Widgets.ShowAllCategory",
+  "Version": "1.00",
+  "SupportedVersions": [ "4.30" ],
+  "Author": "Levani Jalaghonia",
+  "DisplayOrder": 1,
+  "FileName": "Nop.Plugin.Widgets.ShowAllCategory.dll",
+  "Description": "This plugin integrates with Google Analytics. It keeps track of statistics about the visitors and eCommerce conversion on your website"
+}

@@ -1,0 +1,11 @@
+﻿{
+  "Group": "Payment methods",
+  "FriendlyName": "BOG Ipay",
+  "SystemName": "Payments.BOGCheckoutIpay",
+  "Version": "1.0",
+  "SupportedVersions": [ "4.20" ],
+  "Author": "saatec team",
+  "DisplayOrder": 1,
+  "FileName": "Nop.Plugin.Payments.BOGCheckoutIpay.dll",
+  "Description": "This plugin allows paying with BOG Ipay"
+}
