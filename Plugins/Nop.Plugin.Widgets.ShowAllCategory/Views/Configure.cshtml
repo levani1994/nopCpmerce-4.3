@@ -1,2 +1,70 @@
-﻿
-<a>fefsf</a>
+﻿@model Nop.Plugin.Widgets.ShowAllCategory.Models.ConfigurationModel
+@{
+    Layout = "_ConfigurePlugin";
+}
+
+<form asp-controller="WidgetsShowAllCategory" asp-action="Configure" method="post">
+    <div class="panel-group">
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <div class="form-group">
+                    <div class="col-md-3">
+                        <nop-override-store-checkbox asp-for="AuthorizationUrl_OverrideForStore" asp-input="AuthorizationUrl" asp-store-scope="@Model.ActiveStoreScopeConfiguration" />
+                        <nop-label asp-for="AuthorizationUrl" />
+                    </div>
+                    <div class="col-md-9">
+                        <nop-editor asp-for="AuthorizationUrl" />
+                        <span asp-validation-for="AuthorizationUrl"></span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-3">
+                        <nop-override-store-checkbox asp-for="CheckoutUrl_OverrideForStore" asp-input="CheckoutUrl" asp-store-scope="@Model.ActiveStoreScopeConfiguration" />
+                        <nop-label asp-for="CheckoutUrl" />
+                    </div>
+                    <div class="col-md-9">
+                        <nop-editor asp-for="CheckoutUrl" />
+                        <span asp-validation-for="CheckoutUrl"></span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-3">
+                        <nop-override-store-checkbox asp-for="ClientId_OverrideForStore" asp-input="ClientId" asp-store-scope="@Model.ActiveStoreScopeConfiguration" />
+                        <nop-label asp-for="ClientId" />
+                    </div>
+                    <div class="col-md-9">
+                        <nop-editor asp-for="ClientId" />
+                        <span asp-validation-for="ClientId"></span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-3">
+                        <nop-override-store-checkbox asp-for="SecretKey_OverrideForStore" asp-input="SecretKey" asp-store-scope="@Model.ActiveStoreScopeConfiguration" />
+                        <nop-label asp-for="SecretKey" />
+                    </div>
+                    <div class="col-md-9">
+                        <nop-editor asp-for="SecretKey" />
+                        <span asp-validation-for="SecretKey"></span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-3">
+                        <nop-override-store-checkbox asp-for="RequestBodyInJson_OverrideForStore" asp-input="RequestBodyInJson" asp-store-scope="@Model.ActiveStoreScopeConfiguration" />
+                        <nop-label asp-for="RequestBodyInJson" />
+                    </div>
+                    <div class="col-md-9">
+                        @*<nop-editor asp-for="RequestBodyInJson" />*@
+                        <textarea asp-for="RequestBodyInJson" class="form-control" rows="16"></textarea>
+                        <span asp-validation-for="RequestBodyInJson"></span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-md-9 col-md-offset-3">
+                        <input type="submit" name="save" class="btn bg-primary" value="@T("Admin.Common.Save")" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>

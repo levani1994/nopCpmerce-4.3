@@ -83,7 +83,7 @@ namespace Nop.Plugin.Widgets.ShowAllCategory.Controllers
                 // override settings here based on store scope
             }
 
-            return View("~/Plugins/Widgets.ShowAllCategory/Views/Configure.cshtml", model);
+            return Configure();
         }
 
 

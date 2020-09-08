@@ -6,6 +6,10 @@
     {
       "SystemName": "Widgets.ShowAllCategory",
       "Version": "1.00"
+    },
+    {
+      "SystemName": "Widgets.GoogleAnalytics",
+      "Version": "1.62"
     }
   ],
   "PluginNamesToUninstall": [],
